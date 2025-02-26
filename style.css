@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.home-page {
+  background-image: url("./images/homepage-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 98vh;
+  border-radius: 10px;
+  position: relative;
+}
+.bg-gradient {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0px;
+
+  background: rgb(60, 58, 58);
+  background: linear-gradient(
+    90deg,
+    rgba(60, 58, 58, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
