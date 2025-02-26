@@ -17,7 +17,6 @@
   height: 100%;
   width: 30%;
   position: absolute;
-  top: 0px;
   background: linear-gradient(
     90deg,
     rgba(30, 30, 30, 0.9) 0%,
@@ -44,4 +43,53 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .home__background {
+    height: 30%;
+    width: 100%;
+    bottom: 0px;
+    background: rgb(60, 58, 58);
+    background: linear-gradient(
+      0deg,
+      rgba(60, 58, 58, 1) 7%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .home__container {
+    max-width: 450px;
+    margin-left: 0px;
+    bottom: 35%;
+    padding: 20px;
+  }
+
+  .home__text {
+    font-size: 18px;
+  }
+
+  .home__btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    width: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home__container {
+    max-width: 450px;
+    bottom: 40%;
+    padding: 10px;
+  }
+
+  .home__text {
+    text-wrap: pretty;
+    font-size: 16px;
+  }
+
+  .home__btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    width: 150px;
+  }
 }
