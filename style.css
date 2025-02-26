@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
+  font-family: "Poppins", serif;
   box-sizing: border-box;
   overflow: hidden;
 }
 
-.home-page {
+.home {
   background-image: url("./images/homepage-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,16 +13,35 @@
   border-radius: 10px;
   position: relative;
 }
-.bg-gradient {
+.home__background {
   height: 100%;
-  width: 50%;
+  width: 30%;
   position: absolute;
   top: 0px;
-
-  background: rgb(60, 58, 58);
   background: linear-gradient(
     90deg,
-    rgba(60, 58, 58, 1) 0%,
+    rgba(30, 30, 30, 0.9) 0%,
     rgba(255, 255, 255, 0) 100%
   );
+}
+.home__container {
+  position: absolute;
+  bottom: 200px;
+  margin-left: 100px;
+  max-width: 650px;
+}
+.home__text {
+  color: white;
+  font-size: 24px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.home__btn {
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  font-size: 18px;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
